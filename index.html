@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Olá Mundo @ React</title>
+    <!-- 
+   https://github.com/facebook/react/releases
+   https://babeljs.io/docs/en/
+-->
+    <script src="https://unpkg.com/react@^17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.14.3/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="myRoot">
+        <!-- nesta div será construído todo o conteúdo REACT -->
+    </div>
+
+    <script type="text/babel">
+        // ReactDOM irá gerir o acesso ao DOM
+        ReactDOM.render(
+            <div>
+                <h1>Olá Mundo, by React</h1>
+                <p>primeira lição:<br />
+                   - REACT só suporta um elemento HTML no Render</p>
+                   <p>novo ID para a DIV - myRoot </p>
+            </div>
+            ,
+            document.getElementById('myRoot')
+        )
+    </script>
+
+</body>
+
+</html>
